@@ -1,0 +1,29 @@
+{
+  "gatewayApp": {
+    "order": {
+      "home": {
+        "title": "Orders",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Order",
+        "createOrEditLabel": "Maak of wijzig een Order",
+        "search": "Search for Order",
+        "notFound": "No Orders found"
+      },
+      "created": "A new Order is created with identifier {{ param }}",
+      "updated": "A Order is updated with identifier {{ param }}",
+      "deleted": "A Order is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Order {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Order"
+      },
+      "id": "Id",
+      "orderNumber": "Order Number",
+      "amount": "Amount",
+      "status": "Status",
+      "createdAt": "Created At",
+      "userProfile": "User Profile"
+    }
+  }
+}

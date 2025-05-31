@@ -1,0 +1,11 @@
+{
+  "gatewayApp": {
+    "OrderStatus": {
+      "null": "",
+      "PENDING": "PENDING",
+      "PROCESSING": "PROCESSING",
+      "COMPLETED": "COMPLETED",
+      "CANCELLED": "CANCELLED"
+    }
+  }
+}

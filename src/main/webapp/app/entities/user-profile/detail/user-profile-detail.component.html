@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    @if (userProfile(); as userProfileRef) {
+      <div>
+        <h2 data-cy="userProfileDetailsHeading"><span jhiTranslate="gatewayApp.userProfile.detail.title">User Profile</span></h2>
+
+        <hr />
+
+        <jhi-alert-error />
+
+        <jhi-alert />
+
+        <dl class="row-md jh-entity-details">
+          <dt><span jhiTranslate="gatewayApp.userProfile.id">Id</span></dt>
+          <dd>
+            <span>{{ userProfileRef.id }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.userProfile.username">Username</span></dt>
+          <dd>
+            <span>{{ userProfileRef.username }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.userProfile.email">Email</span></dt>
+          <dd>
+            <span>{{ userProfileRef.email }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.userProfile.age">Age</span></dt>
+          <dd>
+            <span>{{ userProfileRef.age }}</span>
+          </dd>
+          <dt><span jhiTranslate="gatewayApp.userProfile.createdAt">Created At</span></dt>
+          <dd>
+            <span>{{ userProfileRef.createdAt | formatMediumDatetime }}</span>
+          </dd>
+        </dl>
+
+        <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+          <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+        </button>
+
+        <button type="button" [routerLink]="['/user-profile', userProfileRef.id, 'edit']" class="btn btn-primary">
+          <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+        </button>
+      </div>
+    }
+  </div>
+</div>

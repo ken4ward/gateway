@@ -1,0 +1,29 @@
+{
+  "gatewayApp": {
+    "userProfile": {
+      "home": {
+        "title": "User Profiles",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe User Profile",
+        "createOrEditLabel": "Maak of wijzig een User Profile",
+        "search": "Search for User Profile",
+        "notFound": "No User Profiles found"
+      },
+      "created": "A new User Profile is created with identifier {{ param }}",
+      "updated": "A User Profile is updated with identifier {{ param }}",
+      "deleted": "A User Profile is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u User Profile {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "User Profile"
+      },
+      "id": "Id",
+      "username": "Username",
+      "email": "Email",
+      "age": "Age",
+      "createdAt": "Created At",
+      "orders": "Orders"
+    }
+  }
+}
